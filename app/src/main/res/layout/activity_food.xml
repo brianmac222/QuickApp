@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:Fragment=".FoodActivity"
+    android:background="@drawable/background_blue">
+
+    <!-- Cheese Pizza Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="370dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toTopOf="@+id/LatteCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cheesePizzaImage"
+                android:layout_width="192dp"
+                android:layout_height="141dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textview3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cheesepizza2" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="156dp"
+                android:layout_height="27dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="12dp"
+                android:text="Large Cheese Pizza"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cheesePizzaPrice"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/cheesePizzaPrice"
+                android:layout_width="54dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="36dp"
+                android:text="11.99"
+                android:textColor="@color/orange"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/btnAddCheesePizza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.467"
+                app:layout_constraintStart_toEndOf="@+id/cheesePizzaImage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.777" />
+
+            <Button
+                android:id="@+id/btnAddCheesePizza"
+                android:layout_width="97dp"
+                android:layout_height="40dp"
+                android:text="Add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toEndOf="@+id/cheesePizzaImage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.75"
+                android:background="@color/red"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Pepperoni Pizza Card -->
+
+    <!-- Hotdog Card -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/LatteCard"
+        android:layout_width="370dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toTopOf="@+id/hotdogsCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:text="Large Pepperoni Pizza"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/pizzaPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.157"
+                app:layout_constraintStart_toEndOf="@+id/pepperoniPizza"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/pizzaPrice"
+                android:layout_width="54dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="48dp"
+                android:text="12.99"
+                android:textColor="@color/orange"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/btnAddPizza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pepperoniPizza"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.543" />
+
+            <Button
+                android:id="@+id/btnAddPizza"
+                android:layout_width="97dp"
+                android:layout_height="40dp"
+                android:text="Add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pepperoniPizza"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.855"
+                android:background="@color/red"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:id="@+id/pepperoniPizza"
+                android:layout_width="186dp"
+                android:layout_height="166dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/pizzaPrice"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/pizza" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hotdogsCard"
+        android:layout_width="370dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LatteCard"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/hotdogCard"
+                android:layout_width="204dp"
+                android:layout_height="152dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hotdog" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="102dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:text="Hotdog"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/hotdogPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hotdogCard"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/hotdogPrice"
+                android:layout_width="54dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="12dp"
+                android:text="5.99"
+                android:textColor="@color/orange"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/btnAddHotdogs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.44"
+                app:layout_constraintStart_toEndOf="@+id/hotdogCard" />
+
+            <Button
+                android:id="@+id/btnAddHotdogs"
+                android:layout_width="97dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="36dp"
+                android:text="Add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.942"
+                app:layout_constraintStart_toEndOf="@+id/hotdogCard"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.733"
+                android:background="@color/red"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+
+        android:id="@+id/shoppingcart"
+        android:layout_width="224dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Shopping Cart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#332B2A"
+        android:textIsSelectable="false"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnCart"
+        android:layout_width="36dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toEndOf="@+id/shoppingcart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cart" />
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="267dp"
+        android:layout_marginBottom="13dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotdogsCard"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

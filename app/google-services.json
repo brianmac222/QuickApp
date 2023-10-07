@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "651209942250",
+    "project_id": "quickapp-25734",
+    "storage_bucket": "quickapp-25734.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651209942250:android:9ab1c546f0e300eb84e393",
+        "android_client_info": {
+          "package_name": "com.example.quickapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKAZnUopain9fjzi7yDvoONXI249sDSZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
